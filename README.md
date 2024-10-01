@@ -24,7 +24,8 @@ y relaciónalos con los resultados analizados
     * El informe se debe subir a la carpeta [results/task4](results/task4) con el nombre caracteristicas.md
 
 # Participantes
-**INDICA AQUÍ LOS PARTICIPANTES**
+Javier Plaza
+Miguel Ordoño
 
 # Enlaces de utilidad
 - [Sintaxis markdown](https://guides.github.com/features/mastering-markdown/)
@@ -46,7 +47,8 @@ Upload the report to the [results/task4](results/task4) folder with the name car
 
 
 # Participants
-Javier Plaza, Miguel Ordoño
+Javier Plaza
+Miguel Ordoño
 
 # Useful Links
 
