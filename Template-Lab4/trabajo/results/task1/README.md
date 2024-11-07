@@ -21,7 +21,12 @@ La ejecución requiere de un fichero de datos de entrada que previamente deberá
       La función main es la que consume todo el tiempo, pues es la que ejecuta todo el programa, depués la funcion "runDetector" que consume un 67.5% del tiempo.
       ![WhatsApp Image 2024-11-07 at 11 10 48](https://github.com/user-attachments/assets/3fd44d5d-fd9f-4809-bd0f-d8fa6504b89a)
     * ¿Qué etapas son las más costosas?
+      ![WhatsApp Image 2024-11-06 at 20 46 10](https://github.com/user-attachments/assets/38afe674-b8e2-4610-bc77-4423edfa74f9)
+
     * ¿Qué operaciones (entendemos operaciones como las funciones definidas en LBL_FAD_Transform_Operations.h/.cpp) son las más complejas y requieren de un mayor tiempo?
+      La operación mas constosa es la que se encuentra en la linea 269 de LBL_FAD_Transform_Operations.cpp
+      ![WhatsApp Image 2024-11-06 at 20 35 47](https://github.com/user-attachments/assets/05a92d5a-0f66-42bb-b49c-c5513bad260d)
+
 
 Realiza un análisis completo y muestra una captura de pantalla del gráfico roofline.
 * ¿Cuáles son los tres bucles más complejos? ¿Por qué están limitados? ¿Cómo los mejorarías?
