@@ -18,17 +18,21 @@ La ejecución requiere de un fichero de datos de entrada que previamente deberá
 
 * Realiza un análisis completo desde la vista de CPU/Roofline. Desde la pestaña de "Survey & Roofline" analiza el resultado Top Down.
     * ¿Qué función de nuestra lógica de negocio consume más tiempo?
+      
       La función main es la que consume todo el tiempo, pues es la que ejecuta todo el programa, depués la funcion "runDetector" que consume un 67.5% del tiempo.
       ![WhatsApp Image 2024-11-07 at 11 10 48](https://github.com/user-attachments/assets/3fd44d5d-fd9f-4809-bd0f-d8fa6504b89a)
     * ¿Qué etapas son las más costosas?
+      
       ![WhatsApp Image 2024-11-06 at 20 46 10](https://github.com/user-attachments/assets/38afe674-b8e2-4610-bc77-4423edfa74f9)
 
     * ¿Qué operaciones (entendemos operaciones como las funciones definidas en LBL_FAD_Transform_Operations.h/.cpp) son las más complejas y requieren de un mayor tiempo?
+      
       La operacion mas compleja es la LBL_FAD_Stage3_4.
       ![image](https://github.com/user-attachments/assets/c049dcc9-7b13-4003-8ee7-a643bb9e3aee)
 
 Realiza un análisis completo y muestra una captura de pantalla del gráfico roofline.
 * ¿Cuáles son los tres bucles más complejos? ¿Por qué están limitados? ¿Cómo los mejorarías?
+  
   Una de las técnicas para mejorar es el desenrollado de bucle.
   ![image](https://github.com/user-attachments/assets/3b31b42a-d009-4b5c-9800-9129e812bb6c)
 
@@ -39,8 +43,10 @@ Realiza un análisis de tipo "refinement" añadiendo el paso de Memory Access Pa
 consumen realizando cálculos internos.
 
 * Indica que dos bucles son
+  
   Linea 150 en Main_Detector y linea 95 en Main_Detector
 * ¿Qué tipos de acceso a memoria se está realizando? ¿cuáles existen?
+  
   Son de tipo mixed strides, además de este tipo existen otros tres más, Acceso Secuencial, Acceso Aleatorio y Acceso No UNiforme a la Memoria.
 
 ![image](https://github.com/user-attachments/assets/5b5277cd-8c74-4285-83bb-937f3faa1ef3)
