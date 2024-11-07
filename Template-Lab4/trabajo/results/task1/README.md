@@ -24,12 +24,14 @@ La ejecución requiere de un fichero de datos de entrada que previamente deberá
       ![WhatsApp Image 2024-11-06 at 20 46 10](https://github.com/user-attachments/assets/38afe674-b8e2-4610-bc77-4423edfa74f9)
 
     * ¿Qué operaciones (entendemos operaciones como las funciones definidas en LBL_FAD_Transform_Operations.h/.cpp) son las más complejas y requieren de un mayor tiempo?
-      La operación mas constosa es la que se encuentra en la linea 269 de LBL_FAD_Transform_Operations.cpp
-      ![WhatsApp Image 2024-11-06 at 20 35 47](https://github.com/user-attachments/assets/05a92d5a-0f66-42bb-b49c-c5513bad260d)
-
+      La operacion mas compleja es la LBL_FAD_Stage3_4.
+      ![image](https://github.com/user-attachments/assets/c049dcc9-7b13-4003-8ee7-a643bb9e3aee)
 
 Realiza un análisis completo y muestra una captura de pantalla del gráfico roofline.
 * ¿Cuáles son los tres bucles más complejos? ¿Por qué están limitados? ¿Cómo los mejorarías?
+  Una de las técnicas para mejorar es el desenrollado de bucle.
+  ![image](https://github.com/user-attachments/assets/3b31b42a-d009-4b5c-9800-9129e812bb6c)
+
 
 Finalmente resulta interesante ver el patron de acceso de memoria que se realiza en el código con el objetivo de valorar la vectorización o mejorar los accesos a memoria para hacer un mejor uso de la jerarquía de memoria.
 
@@ -37,7 +39,12 @@ Realiza un análisis de tipo "refinement" añadiendo el paso de Memory Access Pa
 consumen realizando cálculos internos.
 
 * Indica que dos bucles son
+  Linea 150 en Main_Detector y linea 95 en Main_Detector
 * ¿Qué tipos de acceso a memoria se está realizando? ¿cuáles existen?
+  Son de tipo mixed strides, además de este tipo existen otros tres más, Acceso Secuencial, Acceso Aleatorio y Acceso No UNiforme a la Memoria.
+
+![image](https://github.com/user-attachments/assets/5b5277cd-8c74-4285-83bb-937f3faa1ef3)
+
 
 Para cada pregunta analiza y aporta las capturas de pantalla que veas conveniente para apoyar la explicación.
 
