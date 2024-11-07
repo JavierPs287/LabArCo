@@ -10,10 +10,16 @@ La ejecución requiere de un fichero de datos de entrada que previamente deberá
 * Antes de comenzar a realizar ningún análisis sobre el código es interesante conocer las características de la arquitectura sobre la que estás ejecutando el programa, para ello contesta a las siguientes preguntas:
 
     * Indica tu modelo de procesador, la arquitectura y de cuantos núcleos e hilos de procesamiento dispones
+      Modelo: Intel(R) Core(TM) i7-9750HF CPU @ 2.60GHz.
+      Arquitectura: x86_64.
+      6 núcleos y 12 hilos.
     * ¿Cuantos hilos pueden ser ejecutados por núcleo?
+      12/6 = 2 hilos por núcleo.
 
 * Realiza un análisis completo desde la vista de CPU/Roofline. Desde la pestaña de "Survey & Roofline" analiza el resultado Top Down.
     * ¿Qué función de nuestra lógica de negocio consume más tiempo?
+      La función main es la que consume todo el tiempo, pues es la que ejecuta todo el programa, depués la funcion "runDetector" que consume un 67.5% del tiempo.
+      ![WhatsApp Image 2024-11-07 at 11 10 48](https://github.com/user-attachments/assets/3fd44d5d-fd9f-4809-bd0f-d8fa6504b89a)
     * ¿Qué etapas son las más costosas?
     * ¿Qué operaciones (entendemos operaciones como las funciones definidas en LBL_FAD_Transform_Operations.h/.cpp) son las más complejas y requieren de un mayor tiempo?
 
