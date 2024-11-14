@@ -30,6 +30,12 @@ Revisa el código y responde a las siguientes preguntas:
 
   ANNOTATE_TASK_BEGIN y ANNOTATE_TASK_END: Indican el principio y el final de una tarea.
 * Las anotaciones son como un pseudocódigo de cómo paralelizaríamos con OpenMP. ¿A qué equivale en OpenMP cada una de las partes de la anotación?
+  
+  ANNOTATE_SITE_BEGIN y ANNOTATE_SITE_END: #pragma omp parallel
+
+  ANNOTATE_ITERATION_TASK: #pragma omp for
+
+  ANNOTATE_TASK_BEGIN y ANNOTATE_TASK_END: #pragma omp task
 
 Una vez ejecutado el análisis de tipo "Suitability" accede a la pestaña Suitability Report y contesta a las siguientes preguntas:
 
