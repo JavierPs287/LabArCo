@@ -54,9 +54,22 @@ Una vez ejecutado el análisis de tipo "Suitability" accede a la pestaña Suitab
       
   Site Instance Metrics, Parallel Time: Muestra el tiempo estimado de paralelización para una instancia del sitio específico.
 * ¿Qué diferencia existe entre Impact to Program Gain y "Site Gain"?
+
+  Impact to Program Gain refleja el beneficio que la paralelización de esa región tendría en el rendimiento total del programa. Como una métrica global.
+
+  Site Gain mide el beneficio de la paralelización de esa región específica sin considerar su impacto global. Como una métrica local.
+
 * ¿Qué bucles paralelizarías? ¿Con qué bucle obtendrías un mayor rendimiento?
+  ![image](https://github.com/user-attachments/assets/e4eadcea-93ee-414d-8687-f58a121f6b5b)
+  "Third stage block for", "First stage block for" y "LBL_FAD_Stage2"
+   El que mas rendimiento obtendría es: "Third stage block for"
+
 * ¿Cómo afecta la duración y número de iteraciones al rendimiento esperado? Utiliza capturas de pantalla para apoyar el análisis
+  
+  La duración afecta de forma secuencial y a más duración mejor paralelización, y las iteraciones indican una mejor eficiencia en la paralelización, a mas iteraciones mejor es la eficiencia.
 * ¿A qué corresponde el número de iteraciones en cada "site" en el código? ¿Qué explicación tienen dentro del algoritmo?
+  
+  El codigo está realizando operaciones independientes en cada iteración, esto favorece la paralelización, ya que cada iteración se puede asignar a diferentes hilos de forma segura y eficiente.
 
 ---
 
