@@ -11,6 +11,16 @@ El programador deberá instrumentalizar el código mediante las herramientas que
 Revisa el código y responde a las siguientes preguntas:
 
 * ¿Qué bucles se han anotado?
+  En el "Stage 1: Background":
+  ![image](https://github.com/user-attachments/assets/636cae85-7568-496d-bbe4-1b14fa1e2aed)
+
+  En el "Stage 2: Background Estimation":
+  ![image](https://github.com/user-attachments/assets/21e23a99-7d70-4c7b-b0c0-28b99b16dc0a)
+
+  En el "Stage 3: AD Map":
+  ![image](https://github.com/user-attachments/assets/1fdcb79a-9d6a-4f54-9e07-b72b4b732782)
+
+
 * ¿Qué estructura sigue una anotación? ¿En qué partes se descomponen?
 * Las anotaciones son como un pseudocódigo de cómo paralelizaríamos con OpenMP. ¿A qué equivale en OpenMP cada una de las partes de la anotación?
 
