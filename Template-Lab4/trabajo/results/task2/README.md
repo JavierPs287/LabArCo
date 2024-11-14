@@ -11,6 +11,7 @@ El programador deberá instrumentalizar el código mediante las herramientas que
 Revisa el código y responde a las siguientes preguntas:
 
 * ¿Qué bucles se han anotado?
+  
   En el "Stage 1: Background":
   ![image](https://github.com/user-attachments/assets/636cae85-7568-496d-bbe4-1b14fa1e2aed)
 
@@ -22,6 +23,12 @@ Revisa el código y responde a las siguientes preguntas:
 
 
 * ¿Qué estructura sigue una anotación? ¿En qué partes se descomponen?
+
+  ANNOTATE_SITE_BEGIN y ANNOTATE_SITE_END: Estas anotacion indican el inicio y el final de los bucles.
+
+  ANNOTATE_ITERATION_TASK: Se utiliza para indicar que el bucle se esta utilizando dentro de otro bucle.
+
+  ANNOTATE_TASK_BEGIN y ANNOTATE_TASK_END: Indican el principio y el final de una tarea.
 * Las anotaciones son como un pseudocódigo de cómo paralelizaríamos con OpenMP. ¿A qué equivale en OpenMP cada una de las partes de la anotación?
 
 Una vez ejecutado el análisis de tipo "Suitability" accede a la pestaña Suitability Report y contesta a las siguientes preguntas:
