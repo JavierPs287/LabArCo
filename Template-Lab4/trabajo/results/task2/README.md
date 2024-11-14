@@ -40,6 +40,19 @@ Revisa el código y responde a las siguientes preguntas:
 Una vez ejecutado el análisis de tipo "Suitability" accede a la pestaña Suitability Report y contesta a las siguientes preguntas:
 
 * ¿Qué significan cada una de las columnas de la tabla superior?
+
+  Site Label: Indica el nombre del bloque de código que se ha analizado.
+  
+  Source Location: Muestra el archivo y la línea de código donde se encuentra cada sitio analizado.
+  
+  Impact to Program Gain: Representa la mejora estimada en el rendimiento total del programa si se paraleliza esa parte.
+  
+  Combined Site Metrics, All Instances
+    - Total Serial Time: Tiempo total que tarda el programa en ejecutar es parte.
+    - Total Parallel Time: Tiempo total estimado de ejecución en modo paralelo.
+    - Site Gain: Indica la ganancia de rendimiento que se podría obtener al paralelizar una parte.
+      
+  Site Instance Metrics, Parallel Time: Muestra el tiempo estimado de paralelización para una instancia del sitio específico.
 * ¿Qué diferencia existe entre Impact to Program Gain y "Site Gain"?
 * ¿Qué bucles paralelizarías? ¿Con qué bucle obtendrías un mayor rendimiento?
 * ¿Cómo afecta la duración y número de iteraciones al rendimiento esperado? Utiliza capturas de pantalla para apoyar el análisis
