@@ -17,6 +17,28 @@ Explica las modificaciones realizadas sobre el código original
 ### Análisis posterior
 Compara el código original con el mejorado y realiza tablas de comparación aumentando el número de hilos.
 
+| Hilos                  | Site label                          | Total Serial Time(s) | Total Parallel Time (s) |  Site Gain  |
+|------------------------|-------------------------------------|--------------------- |-----------------------  |-------------|
+| 2                      | First stage block for               | 0,643                | 0,323                   |  1,99x      |
+|                        | LDL_FAD_Stage2                      | 0,004                | 0,004                   |  1,00x      |
+|                        | Third stage block for               | 4,595                | 2,300                   |  2,00x      |
+| 4                      | First stage block for               | 0,643                | 0,163                   |  3,95x      |
+|                        | LDL_FAD_Stage2                      | 0,004                | 0,004                   |  1,00x      |
+|                        | Third stage block for               | 4,595                | 1,152                   |  3,99x      |
+| 8                      | First stage block for               | 0,643                | 0,085                   |  7,53x      |
+|                        | LDL_FAD_Stage2                      | 0,004                | 0,004                   |  1,00x      |
+|                        | Third stage block for               | 4,595                | 0,576                   |  7,98x      |
+| 16                     | First stage block for               | 0,643                | 0,046                   |  13,91x     |
+|                        | LDL_FAD_Stage2                      | 0,004                | 0,004                   |  0,99x      |
+|                        | Third stage block for               | 4,595                | 0,299                   |  15,36x     |
+| 32                     | First stage block for               | 0,643                | 0,028                   |  22,81x     |
+|                        | LDL_FAD_Stage2                      | 0,004                | 0,004                   |  0,99x      |
+|                        | Third stage block for               | 4,595                | 0,161                   |  28,56x     |
+| 64                     | First stage block for               | 0,643                | 0,016                   |  39,74x     |
+|                        | LDL_FAD_Stage2                      | 0,004                | 0,004                   |  0,99x      |
+|                        | Third stage block for               | 4,595                | 0,092                   |  50,11x     |
+
+
 * ¿Coinciden los resultados con el valor predecido por la herramienta?
 * ¿Cómo has comparado los resultados para verificar la correción del programa paralelo?
 
