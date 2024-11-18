@@ -40,7 +40,9 @@ Compara el código original con el mejorado y realiza tablas de comparación aum
 
 
 * ¿Coinciden los resultados con el valor predecido por la herramienta?
+  No coinciden, en la que mas se asemejan es en el LDL_FAD_Stage2
 * ¿Cómo has comparado los resultados para verificar la correción del programa paralelo?
+  Con la herramienta de Suitability
 
 ### Resultados
 Por cada mejora guarda los resultados y el código junto a su makefile en results/task3/vX donde X indica el orden en que has paralelizado.
